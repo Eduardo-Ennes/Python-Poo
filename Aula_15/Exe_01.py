@@ -41,22 +41,18 @@ class estudantes:
         else:
             self.lista[i1][0] = valor
         print('Atualizado com sucesso.')
-    
-    def menu(self):
-        print()
-        print('-' * 20)
-        print('1 - Adicionar aluno')
-        print('2 - Mostrar lista geral')
-        print('3 - Mostrar informações do aluno(a)')
-        print('4 - Atualizar informação')
-        print('5 - Mostrar opções')
-        print('6 - Sair do programa')
-        print('-' * 20)
         
 
-p = estudantes()
-p.menu()    
+p = estudantes()   
 while True:
+    print()
+    print('-' * 20)
+    print('1 - Adicionar aluno')
+    print('2 - Mostrar lista geral')
+    print('3 - Mostrar informações do aluno(a)')
+    print('4 - Atualizar informação')
+    print('5 - Sair do programa')
+    print('-' * 20)
     while True:
         print()
         print('-' * 20)
@@ -116,11 +112,8 @@ while True:
             p.atualizar_info(ind1, ind2, valor)
         else:
             print('Indice errado...Tente novamente!')
-           
-    elif res == 5:
-        p.menu()
     
-    elif res == 6:
+    elif res == 5:
         print('-' * 20)
         print('Saindo do programa... Muito obrigado!')
         print()
